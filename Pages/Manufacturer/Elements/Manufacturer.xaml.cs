@@ -13,21 +13,21 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace pr32savichev
+namespace savichev32pr.Pages.Manufacturer.Elements
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Manufacturer.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Manufacturer : UserControl
     {
-        public MainWindow()
+        public Manufacturer()
         {
             InitializeComponent();
         }
 
-        public void OpenPage(Page pages)
+        private void DeleteManufacturer(object sender, RoutedEventArgs e)
         {
-            frame.Navigate(pages);
+
         }
     }
 }

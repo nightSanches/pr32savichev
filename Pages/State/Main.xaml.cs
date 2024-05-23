@@ -13,21 +13,19 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace pr32savichev
+namespace savichev32pr.Pages.State
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для Main.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Main : Page
     {
-        public MainWindow()
+        public IEnumerable<Classes.State> AllState = Classes.State.AllState();
+        public Main()
         {
             InitializeComponent();
-        }
-
-        public void OpenPage(Page pages)
-        {
-            frame.Navigate(pages);
+            foreach (var State in AllState)
+                stateParent.Children.Add(new Pages.State.Elements.State(State, this));
         }
     }
 }

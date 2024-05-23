@@ -63,12 +63,51 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Classes\Contry.cs" />
+    <Compile Include="Classes\DBConnection.cs" />
+    <Compile Include="Classes\Manufacturer.cs" />
+    <Compile Include="Classes\State.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Pages\Manufacturer\Elements\Manufacturer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Manufacturer\Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\State\Add.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\State\Elements\State.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\State\Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pages\Manufacturer\Elements\Manufacturer.xaml.cs">
+      <DependentUpon>Manufacturer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Manufacturer\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\State\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\State\Elements\State.xaml.cs">
+      <DependentUpon>State.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\State\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -93,6 +132,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\ic_Manufacture.png" />
+    <Resource Include="Images\ic_State.png" />
+    <Resource Include="Images\ic_supply.png" />
+    <Resource Include="Images\ic_VinilRecord.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\Records\Elements\" />
+    <Folder Include="Pages\Supply\Elements\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
