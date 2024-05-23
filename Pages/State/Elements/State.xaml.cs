@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using pr32savichev;
 
 namespace savichev32pr.Pages.State.Elements
 {
@@ -42,7 +43,7 @@ namespace savichev32pr.Pages.State.Elements
         {
             if(MessageBox.Show($"Удалить состояние: {this.state.Name}?", "Уведомление", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
             {
-                IEnumerable<Classes.Record> AllRecords = Classes.Record.AllRecords();
+                IEnumerable<pr32savichev.Classes.Record> AllRecords = pr32savichev.Classes.Record.AllRecords();
                 if(AllRecords.Where(x=>x.IdState == state.Id).Count()>0)
                 {
                     MessageBox.Show($"Состояние {this.state.Name} невозможно удалить. Для начала удалите зависимости.", "Уведомление");

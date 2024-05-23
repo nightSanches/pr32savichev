@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pr32savichev.Classes
 {
-    internal class Record
+    public class Record
     {
     }
 }
