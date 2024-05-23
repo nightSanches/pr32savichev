@@ -12,7 +12,7 @@
             </Border.Effect>
         </Border>
         <Grid Margin="15">
-            <Image Width="68" Height="68" VerticalAlignment="Top" HorizontalAlignment="Left" Source="/Image/ic_Manufacture.png"/>
+            <Image Width="68" Height="68" VerticalAlignment="Top" HorizontalAlignment="Left" Source="/pr32savichev;component/Images/ic_Manufacture.png"/>
             <Button Content="Изменить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="68" Height="25" BorderBrush="#FFFF9800" Background="#FFFF9800" Foreground="White" FontWeight="Bold"  Margin="0,73,0,0" Click="EditManufacturer">
                 <Button.Effect>
                     <DropShadowEffect BlurRadius="10" Color="Black" Direction="315" ShadowDepth="2" Opacity="0.5"/>

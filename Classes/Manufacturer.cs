@@ -47,6 +47,16 @@ namespace savichev32pr.Classes
                     x.Mail == this.Mail).First().Id;
                     
             }
+            else
+            {
+                Classes.DBConnection.Connection(
+                        "UPDATE [dbo].[Manufacturer] SET " +
+                        $"[Name] = N'{this.Name}', " +
+                        $"[CountryCode] = {this.CountryCode}, " +
+                        $"[Phone] = '{this.Phone}', " +
+                        $"[Mail] = '{this.Mail}' " +
+                        $"WHERE [Id] = {this.Id}");
+            }
         }
 
         public void Delete() =>
