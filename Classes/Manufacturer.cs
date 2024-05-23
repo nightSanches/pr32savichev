@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace savichev32pr.Classes
+namespace pr32savichev.Classes
 {
     public class Manufacturer
     {
