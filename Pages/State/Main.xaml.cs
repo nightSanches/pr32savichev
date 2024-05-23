@@ -1,4 +1,4 @@
-﻿    using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +20,7 @@ namespace savichev32pr.Pages.State
     /// </summary>
     public partial class Main : Page
     {
-        public IEnumerable<Classes.State> AllState = Classes.State.AllState();
+        public IEnumerable<pr32savichev.Classes.State> AllState = pr32savichev.Classes.State.AllState();
         public Main()
         {
             InitializeComponent();

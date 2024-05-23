@@ -21,8 +21,8 @@ namespace savichev32pr.Pages.State
     /// </summary>
     public partial class Add : Page
     {
-        Classes.State changeState;
-        public Add(Classes.State state = null)
+        pr32savichev.Classes.State changeState;
+        public Add(pr32savichev.Classes.State state = null)
         {
             InitializeComponent();
             if (state != null)
@@ -42,7 +42,7 @@ namespace savichev32pr.Pages.State
                 {
                     if(this.changeState == null)
                     {
-                        Classes.State newState = new Classes.State()
+                        pr32savichev.Classes.State newState = new pr32savichev.Classes.State()
                         {
                             Name = tbName.Text,
                             Subname = tbSubname.Text,

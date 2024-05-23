@@ -1,5 +1,4 @@
 ﻿using pr32savichev;
-using savichev32pr.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +21,10 @@ namespace savichev32pr.Pages.Manufacturer.Elements
     /// </summary>
     public partial class Manufacturer : UserControl
     {
-        IEnumerable<Classes.Country> Countries = Country.AllCountries();
+        IEnumerable<pr32savichev.Classes.Contry> Countries = pr32savichev.Classes.Contry.AllCountries();
         Pages.Manufacturer.Main main;
-        Classes.Manufacturer manufacturer;
-        public Manufacturer(Classes.Manufacturer manufacturer, Pages.Manufacturer.Main main)
+        pr32savichev.Classes.Manufacturer manufacturer;
+        public Manufacturer(pr32savichev.Classes.Manufacturer manufacturer, Pages.Manufacturer.Main main)
         {
             InitializeComponent();
             tbName.Text = manufacturer.Name;
@@ -36,7 +35,7 @@ namespace savichev32pr.Pages.Manufacturer.Elements
             this.main = main;
         }
 
-        private void EditManufacturer(object sender, RoutedEventArgs e) => MainWindow.mainWindow.OpenPage(new Pages.Manufacturer.Add(this.manufacturer));
+        private void EditManufacturer(object sender, RoutedEventArgs e) => MainWindow.mainWindow.OpenPage(new pr32savichev.Pages.Manufacturer.Add(this.manufacturer));
 
         private void DeleteManufacturer(object sender, RoutedEventArgs e)
         {

@@ -15,7 +15,7 @@ namespace pr32savichev.Classes
         public string Phone { get; set; }
         public string Mail { get; set; }
 
-        public static IEnumerable<Manufacturer> AllManufacrurers()
+        public static IEnumerable<Manufacturer> AllManufacturers()
         {
             List<Manufacturer> manufacturers = new List<Manufacturer>();
             DataTable recordQuery = Classes.DBConnection.Connection("SELECT * FROM [dbo].[Manufacturer]");
@@ -40,7 +40,7 @@ namespace pr32savichev.Classes
                 Classes.DBConnection.Connection("INSERT INTO [dbo].[Manufacturer]([Name], [CountryCode], [Phone], [Mail]) " +
                     $"VALUES (N'{this.Name}'), '{this.CountryCode}', '{this.Phone}', '{this.Mail}')");
 
-                this.Id = Manufacturer.AllManufacrurers().Where(
+                this.Id = Manufacturer.AllManufacturers().Where(
                     x => x.Name == this.Name &&
                     x.CountryCode == this.CountryCode &&
                     x.Phone == this.Phone &&

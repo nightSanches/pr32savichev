@@ -20,7 +20,7 @@ namespace pr32savichev.Pages.Supply
     /// </summary>
     public partial class Add : Page
     {
-        IEnumerable<Classes.Manufacturer> AllManufacturers = Classes.Manufacturer.AllManufacturers();
+        IEnumerable<Classes.Manufacturer> AllManufacturers = pr32savichev.Classes.Manufacturer.AllManufacturers();
         IEnumerable<Classes.Record> AllRecords = Classes.Record.AllRecords();
         Classes.Supply changeSupply;
         public Add(Classes.Supply changeSupply = null)
